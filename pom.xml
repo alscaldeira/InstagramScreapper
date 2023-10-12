@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.caldeira</groupId>
+    <artifactId>contact-scrapper</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <exec.mainClass>com.caldeira.insta.contact.scrapper.InstaContactScrapper</exec.mainClass>
+    </properties>
+    <dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>3.141.59</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/junit/junit -->
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.13.2</version>
+	    <scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-sheets -->
+	<dependency>
+	    <groupId>com.google.apis</groupId>
+	    <artifactId>google-api-services-sheets</artifactId>
+	    <version>v4-rev614-1.18.0-rc</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client-jackson2 -->
+	<dependency>
+	    <groupId>com.google.api-client</groupId>
+	    <artifactId>google-api-client-jackson2</artifactId>
+	    <version>1.20.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>com.google.oauth-client</groupId>
+	    <artifactId>google-oauth-client-jetty</artifactId>
+	    <version>1.22.0</version>
+	</dependency>	
+        <dependency>
+        <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId> 
+            <version>5.2.0</version> 
+        </dependency> 
+        <dependency> 
+          <groupId>org.apache.poi</groupId> 
+          <artifactId>poi-ooxml</artifactId> 
+          <version>5.2.0</version> 
+        </dependency>
+        <dependency>
+          <groupId>org.jxls</groupId>
+          <artifactId>jxls-jexcel</artifactId>
+          <version>1.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.dhatim</groupId>
+            <artifactId>fastexcel-reader</artifactId>
+            <version>0.15.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.dhatim</groupId>
+            <artifactId>fastexcel</artifactId>
+            <version>0.15.3</version>
+        </dependency>
+  </dependencies>
+</project>
